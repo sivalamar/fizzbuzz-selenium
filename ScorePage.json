@@ -1,0 +1,98 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://espn.go.com/"
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "id",
+        "value": "videoPlayer"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "css selector",
+        "value": "div.bg-elements"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "id",
+        "value": "nav-wrapper"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "link text",
+        "value": "MyESPN"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "name",
+        "value": "&lpos=sitenavdefault&lid=sitenav_nfl"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "css selector",
+        "value": "div.md-span-2.gradient-background"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "link text",
+        "value": "Draft"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "name",
+        "value": "&lpos=sitenavdefault&lid=nfl_scores"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "name",
+        "value": "&lpos=sitenavdefault&lid=nfl_scores"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "css selector",
+        "value": "html"
+      }
+    },
+    {
+      "type": "mouseOverElement",
+      "locator": {
+        "type": "css selector",
+        "value": "h2"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "NFL Scoreboard"
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
